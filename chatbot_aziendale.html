@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatbot Aziendale — eleonora.dev</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="project.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">eleonora.dev<span class="cursor-blink">_</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#progetti">← progetti</a></li>
+    </ul>
+  </nav>
+
+  <main class="project-main">
+
+    <div class="project-hero">
+      <div class="project-meta-top">
+        <span class="tag">Progetto 01</span>
+        <span class="tag status-live-tag">live + in evoluzione</span>
+      </div>
+      <h1 class="project-title">Chatbot Aziendale</h1>
+      <p class="project-tagline">Un assistente conversazionale per l'assistenza clienti, costruito per essere scalabile dal primo nodo.</p>
+    </div>
+
+    <div class="project-grid">
+
+      <aside class="project-sidebar">
+        <div class="sidebar-block">
+          <span class="sidebar-label">Stato</span>
+          <span class="sidebar-value status-live-text">Live — implementazioni continue</span>
+        </div>
+        <div class="sidebar-block">
+          <span class="sidebar-label">Tecnologie</span>
+          <div class="sidebar-tags">
+            <span>Botpress</span>
+            <span>AI / LLM</span>
+            <span>Knowledge Base</span>
+            <span>Workflow engine</span>
+          </div>
+        </div>
+        <div class="sidebar-block">
+          <span class="sidebar-label">Tipologia</span>
+          <span class="sidebar-value">Progetto aziendale</span>
+        </div>
+      </aside>
+
+      <div class="project-content">
+
+        <section class="project-section">
+          <h2><span class="section-num">01</span>Obiettivo</h2>
+          <p>Creare un chatbot per l'assistenza clienti capace di rispondere in modo coerente con il contesto della conversazione. L'interazione è guidata da scelte strutturate — l'utente non digita testo libero, ma seleziona tra opzioni proposte dal bot, rendendo il flusso prevedibile, chiaro e controllabile.</p>
+        </section>
+
+        <section class="project-section">
+          <h2><span class="section-num">02</span>Processo di creazione</h2>
+          <p>Il punto di partenza è stato trovare uno strumento che permettesse di costruire il chatbot in modo rapido, senza richiedere infrastruttura custom. La scelta è ricaduta su <strong>Botpress</strong> dopo una fase di ricerca comparativa.</p>
+          <p>Dopo aver aperto il profilo e familiarizzato con l'ambiente, ho iniziato costruendo i nodi basilari e popolando la knowledge base con le informazioni aziendali. Qui è arrivato il primo errore significativo: avevo costruito tutto nel <strong>main flow</strong>, che è diventato rapidamente un blocco monolitico, difficile da leggere e impossibile da scalare.</p>
+          <div class="insight-block">
+            <span class="insight-label">// errore → apprendimento</span>
+            <p>Ricostruire tutto usando i <strong>workflow separati</strong> ha richiesto tempo, ma ha trasformato il progetto. La struttura risultante è modulare, ogni flusso ha una responsabilità precisa, il main è pulito. È la differenza tra codice che funziona e codice che si può mantenere.</p>
+          </div>
+        </section>
+
+        <section class="project-section">
+          <h2><span class="section-num">03</span>Stato del progetto</h2>
+          <p>Il chatbot è attivo e in produzione. Non è un progetto "finito" nel senso classico — viene aggiornato continuamente con nuovi flussi, nuove voci nella knowledge base e piccoli miglioramenti ai messaggi. È uno strumento vivo.</p>
+        </section>
+
+        <section class="project-section">
+          <h2><span class="section-num">04</span>Prossimi step</h2>
+          <ul class="next-steps">
+            <li>
+              <span class="step-icon">→</span>
+              <div>
+                <strong>Risposte con immagini</strong>
+                <p>Integrare contenuti visivi nelle risposte per rendere alcune informazioni più immediate — schede prodotto, istruzioni, FAQ visuali.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-icon">→</span>
+              <div>
+                <strong>Testi più ricchi</strong>
+                <p>Migliorare la formattazione delle risposte testuali, introducendo struttura e gerarchia dove serve.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="project-nav-bottom">
+      <a href="index.html#progetti" class="btn-back">← tutti i progetti</a>
+      <a href="gioco_interattivo.html" class="btn-next">prossimo progetto →</a>
+    </div>
+
+  </main>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
