@@ -81,9 +81,9 @@ L'AI, per me, non è una scorciatoia. È una lente. La uso per fare domande migl
 
 ## Contatti
 
-**Email** — ciao@eleonora.dev  
-**GitHub** — github.com/eleonora  
-**LinkedIn** — linkedin.com/in/eleonora  
+**Email** — eleonoragiarruzzo@gmail.com 
+**GitHub** — github.com/eleonoragiarruzzo-9777  
+**LinkedIn** — linkedin.com/in/eleonora-giarruzzo
 
 ---
 
