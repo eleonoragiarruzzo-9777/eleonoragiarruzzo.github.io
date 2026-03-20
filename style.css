@@ -13,8 +13,8 @@
   --text-secondary: #888888;
   --text-muted: #444444;
 
-  --accent: #c8f55a;
-  --accent-dim: rgba(200, 245, 90, 0.08);
+  --accent: #777ef5;
+  --accent-dim: rgba(98, 90, 245, 0.08);
   --accent-border: rgba(200, 245, 90, 0.2);
 
   --font-display: 'Syne', sans-serif;
@@ -84,6 +84,7 @@ ul { list-style: none; }
   justify-content: space-between;
   padding: 0 40px;
   background: rgba(13, 13, 13, 0.85);
+  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-light);
   z-index: 100;
@@ -146,6 +147,7 @@ ul { list-style: none; }
     linear-gradient(var(--border-light) 1px, transparent 1px),
     linear-gradient(90deg, var(--border-light) 1px, transparent 1px);
   background-size: 60px 60px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black 0%, transparent 100%);
   mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black 0%, transparent 100%);
   opacity: 0.4;
   pointer-events: none;
@@ -358,13 +360,13 @@ ul { list-style: none; }
 .status-live {
   color: var(--accent);
   background: var(--accent-dim);
-  border: 1px solid var(--accent-border);
+  border: 1px solid var(--accent);
 }
 
 .status-wip {
-  color: #f5a623;
-  background: rgba(245, 166, 35, 0.08);
-  border: 1px solid rgba(245, 166, 35, 0.2);
+  color: #d623f5;
+  background: rgba(168, 35, 245, 0.08);
+  border: 1px solid rgba(242, 35, 245, 0.2);
 }
 
 .card-title {
@@ -611,7 +613,7 @@ ul { list-style: none; }
   color: var(--accent);
   letter-spacing: 0.08em;
   background: var(--accent-dim);
-  border: 1px solid var(--accent-border);
+  border: 1px solid var(--accent);
   padding: 1px 6px;
   border-radius: 2px;
   white-space: nowrap;
