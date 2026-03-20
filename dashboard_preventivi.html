@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Preventivi — eleonora.dev</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="project.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">eleonora.dev<span class="cursor-blink">_</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#progetti">← progetti</a></li>
+    </ul>
+  </nav>
+
+  <main class="project-main">
+
+    <div class="project-hero">
+      <div class="project-meta-top">
+        <span class="tag">Progetto 03</span>
+        <span class="tag status-wip-tag">in pausa</span>
+      </div>
+      <h1 class="project-title">Dashboard Preventivi</h1>
+      <p class="project-tagline">Applicazione web per creare preventivi — online e offline — con una visione chiara su dove potrà arrivare con l'AI.</p>
+    </div>
+
+    <div class="project-grid">
+
+      <aside class="project-sidebar">
+        <div class="sidebar-block">
+          <span class="sidebar-label">Stato</span>
+          <span class="sidebar-value status-wip-text">In pausa</span>
+        </div>
+        <div class="sidebar-block">
+          <span class="sidebar-label">Tecnologie</span>
+          <div class="sidebar-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Python</span>
+          </div>
+        </div>
+        <div class="sidebar-block">
+          <span class="sidebar-label">Tipologia</span>
+          <span class="sidebar-value">Web app — SWA</span>
+        </div>
+      </aside>
+
+      <div class="project-content">
+
+        <section class="project-section">
+          <h2><span class="section-num">01</span>Obiettivo</h2>
+          <p>Costruire un'applicazione web per la creazione di preventivi, utilizzabile sia online che offline. Il problema di partenza era pratico: serve uno strumento flessibile, non un foglio Excel rigido. La soluzione è una <strong>Static Web App</strong> — leggera, deployabile ovunque, e soprattutto aperta a integrazioni future.</p>
+        </section>
+
+        <section class="project-section">
+          <h2><span class="section-num">02</span>Processo di creazione</h2>
+          <p>Il punto di partenza è stato una domanda precisa: Excel o applicazione? La risposta non era scontata. Excel è immediato, familiare, zero sviluppo. Ma ha un limite strutturale: non scala, non si integra, non evolve.</p>
+          <p>La scelta dell'applicazione web è nata da una visione a lungo termine: costruire qualcosa su cui si possa costruire ancora. Una SWA in HTML, CSS, JavaScript e Python offre la base tecnica giusta — portabile, manutenibile, estendibile.</p>
+          <div class="insight-block">
+            <span class="insight-label">// la vera ragione</span>
+            <p>La scelta di non usare Excel non era solo tecnica. Era strategica: volevo lasciare la porta aperta all'<strong>integrazione AI</strong>. Un'applicazione web può ospitare un modello che genera il preventivo in autonomia. Un foglio Excel no.</p>
+          </div>
+        </section>
+
+        <section class="project-section">
+          <h2><span class="section-num">03</span>Stato del progetto</h2>
+          <p>Il progetto è attualmente in pausa. La struttura base è definita, le scelte tecnologiche sono solide. La pausa non è abbandono — è attesa del momento giusto per riprendere con la giusta energia e continuità.</p>
+        </section>
+
+        <section class="project-section">
+          <h2><span class="section-num">04</span>Prossimi step</h2>
+          <ul class="next-steps">
+            <li>
+              <span class="step-icon">→</span>
+              <div>
+                <strong>Feedback immediato per l'utente</strong>
+                <p>Migliorare l'esperienza d'uso con validazioni in tempo reale, messaggi di conferma e stati visivi chiari durante la compilazione.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-icon">→</span>
+              <div>
+                <strong>Regole per le scelte</strong>
+                <p>Implementare logiche condizionali — certi campi si attivano in base ad altri, certi valori escludono opzioni, il preventivo si costruisce in modo guidato.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-icon">→</span>
+              <div>
+                <strong>Integrazione AI</strong>
+                <p>Il passo finale e più ambizioso: un modello che legge i dati inseriti e genera il preventivo in autonomia, riducendo il lavoro manuale a zero.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="project-nav-bottom">
+      <a href="gioco_interattivo.html" class="btn-back">← progetto precedente</a>
+      <a href="index.html#progetti" class="btn-next">tutti i progetti →</a>
+    </div>
+
+  </main>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
