@@ -1,66 +1,503 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eleonora Giarruzzo | AI Experiments Lab</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header>
-    <h1>Eleonora Giarruzzo</h1>
-    <p>Digital & AI Experimenter</p>
-  </header>
-
-  <section class="hero">
-    <h2>Costruisco, testo e sperimento con l’AI</h2>
-    <p>Trasformo idee in strumenti concreti attraverso test, errori e iterazioni continue.</p>
-  </section>
-
-  <section class="projects">
-    <h2>Progetti</h2>
-
-    <div class="card">
-      <h3>Chatbot aziendale</h3>
-      <p>Progettazione e sviluppo di una chatbot per migliorare l’interazione con utenti e automatizzare risposte.</p>
-    </div>
-
-    <div class="card">
-      <h3>Gioco interattivo (tesi)</h3>
-      <p>Sviluppo di un gioco utilizzando risorse online e AI per creare meccaniche interattive.</p>
-    </div>
-
-    <div class="card">
-      <h3>Dashboard preventivi (WIP)</h3>
-      <p>Sto sviluppando una dashboard per la gestione dei preventivi integrando AI per frontend e backend.</p>
-    </div>
-
-  </section>
-
-  <section class="experiments">
-    <h2>Esperimenti AI</h2>
-    <ul>
-      <li>Uso AI per creare contenuti e migliorare workflow</li>
-      <li>Sperimentazione continua di nuovi strumenti AI</li>
-      <li>Automazione di attività digitali e organizzative</li>
+  <!-- NAV -->
+  <nav class="nav">
+    <span class="nav-logo">eleonora.dev<span class="cursor-blink">_</span></span>
+    <ul class="nav-links">
+      <li><a href="#progetti">progetti</a></li>
+      <li><a href="#ai">ai/exp</a></li>
+      <li><a href="#mindset">mindset</a></li>
+      <li><a href="#contatti">contatti</a></li>
     </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-meta">
+      <span class="tag">DISPONIBILE — MILANO</span>
+      <span class="tag">v1</span>
+    </div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="line-reveal">costruisco cose</span><br>
+        <span class="line-reveal delay-1">con e senza AI.</span>
+      </h1>
+      <p class="hero-sub line-reveal delay-2">
+        Sviluppatrice & sperimentatrice. Non uso l'AI per fare marketing —<br>
+        la uso per capire dove stia andando il pensiero umano.
+      </p>
+    </div>
+
+    <div class="hero-footer">
+      <div class="hero-stack">
+        <span>TypeScript</span>
+        <span>Python</span>
+        <span>LLM orchestration</span>
+        <span>generative systems</span>
+      </div>
+      <a href="#progetti" class="scroll-hint">
+        <svg width="16" height="24" viewBox="0 0 16 24"><path d="M8 0v20M1 13l7 8 7-8" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+      </a>
+    </div>
+
+    <!-- grid decorativa -->
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
   </section>
 
-  <section class="mindset">
-    <h2>Come lavoro</h2>
-    <p>Il mio approccio è pratico: parto da un’idea, provo, sbaglio, imparo e miglioro. Mi interessa capire come funzionano le cose e costruire soluzioni reali, anche senza avere tutte le risposte all’inizio.</p>
+  <!-- PROGETTI -->
+  <section class="section" id="progetti">
+    <div class="section-header">
+      <span class="section-index">01</span>
+      <h2 class="section-title">Progetti</h2>
+    </div>
+
+    <div class="projects-grid">
+      <article class="card card--featured">
+        <div class="card-top">
+          <span class="card-tag">OSS · 2024</span>
+          <span class="card-status status-live">live</span>
+        </div>
+        <h3 class="card-title">Context Mapper</h3>
+        <p class="card-desc">Tool CLI per mappare e comprimere contesti LLM. Riduce il token overhead del 40% mantenendo la coerenza semantica.</p>
+        <div class="card-tech">
+          <span>Python</span><span>tiktoken</span><span>networkx</span>
+        </div>
+        <a href="#" class="card-link">
+          <span>esplora</span>
+          <svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 12L12 2M12 2H5M12 2v7" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+        </a>
+      </article>
+
+      <article class="card">
+        <div class="card-top">
+          <span class="card-tag">Personale · 2025</span>
+          <span class="card-status status-wip">wip</span>
+        </div>
+        <h3 class="card-title">Drift Reader</h3>
+        <p class="card-desc">Feed reader che usa modelli locali per classificare e connettere articoli. Zero cloud, tutto on-device.</p>
+        <div class="card-tech">
+          <span>Electron</span><span>Ollama</span><span>SQLite</span>
+        </div>
+        <a href="#" class="card-link">
+          <span>esplora</span>
+          <svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 12L12 2M12 2H5M12 2v7" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+        </a>
+      </article>
+
+      <article class="card">
+        <div class="card-top">
+          <span class="card-tag">Client · 2024</span>
+          <span class="card-status status-live">live</span>
+        </div>
+        <h3 class="card-title">Forma Design System</h3>
+        <p class="card-desc">Sistema di componenti per startup B2B. Tokenizzazione completa, dark mode, accessibilità WCAG AA.</p>
+        <div class="card-tech">
+          <span>React</span><span>Radix UI</span><span>Figma</span>
+        </div>
+        <a href="#" class="card-link">
+          <span>esplora</span>
+          <svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 12L12 2M12 2H5M12 2v7" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+        </a>
+      </article>
+    </div>
   </section>
 
-  <section class="contact">
-    <h2>Contatti</h2>
-    <p>Email: eleonoragiarruzzo@email.com</p>
-    <p>GitHub: <a href="#">inserisci link GitHub</a></p>
+  <!-- AI EXPERIMENTS -->
+  <section class="section section--dark" id="ai">
+    <div class="section-header">
+      <span class="section-index">02</span>
+      <h2 class="section-title">Esperimenti AI</h2>
+    </div>
+    <p class="section-intro">
+      Non uso l'AI per generare contenuti. La uso come microscopio — per osservare strutture, pattern, limiti.
+    </p>
+
+    <div class="experiments-list">
+      <div class="experiment">
+        <div class="experiment-num">001</div>
+        <div class="experiment-body">
+          <h4>Hallucination surface mapping</h4>
+          <p>Mappatura sistematica delle zone di allucinazione in GPT-4 e Claude tramite prompt strutturati. Risultati inaspettati sulla geometria degli errori.</p>
+          <div class="experiment-meta">
+            <span>3 settimane</span>
+            <span>~12k prompt</span>
+            <span>nota metodologica disponibile</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="experiment">
+        <div class="experiment-num">002</div>
+        <div class="experiment-body">
+          <h4>Latent space poetry</h4>
+          <p>Interpolazione nello spazio latente di modelli text-to-image per generare sequenze visive coerenti. Più interessante dei risultati finali è il percorso.</p>
+          <div class="experiment-meta">
+            <span>ongoing</span>
+            <span>Stable Diffusion</span>
+            <span>UMAP vis</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="experiment">
+        <div class="experiment-num">003</div>
+        <div class="experiment-body">
+          <h4>LLM come strumento epistemico</h4>
+          <p>Uso di modelli come interlocutori per il pensiero divergente — non per avere risposte, ma per fare domande migliori.</p>
+          <div class="experiment-meta">
+            <span>riflessione in corso</span>
+            <span>scritto privato</span>
+            <span>draft pubblico a breve</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- terminal decor -->
+    <div class="terminal-decor" aria-hidden="true">
+      <div class="terminal-bar">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="terminal-body">
+        <span class="t-comment">// ultima sessione</span><br>
+        <span class="t-key">model</span><span class="t-op"> = </span><span class="t-val">"claude-3-7-sonnet"</span><br>
+        <span class="t-key">tokens</span><span class="t-op"> = </span><span class="t-val">1_847_223</span><br>
+        <span class="t-key">insight</span><span class="t-op"> = </span><span class="t-val">pending<span class="cursor-blink">_</span></span>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>Costruito con HTML, CSS e AI</p>
+  <!-- MINDSET -->
+  <section class="section" id="mindset">
+    <div class="section-header">
+      <span class="section-index">03</span>
+      <h2 class="section-title">Mindset</h2>
+    </div>
+
+    <div class="mindset-grid">
+      <blockquote class="principle">
+        <p>Il codice è l'ultimo strato. Prima viene il modello mentale del problema.</p>
+      </blockquote>
+
+      <blockquote class="principle">
+        <p>L'AI non è un junior developer da supervisare. È un territorio da esplorare.</p>
+      </blockquote>
+
+      <blockquote class="principle">
+        <p>La semplicità non è assenza di complessità. È complessità che ha trovato la sua forma giusta.</p>
+      </blockquote>
+
+      <div class="reading-list">
+        <h4>stack mentale attuale</h4>
+        <ul>
+          <li>
+            <span class="rl-type">libro</span>
+            <span>Gödel, Escher, Bach — Hofstadter</span>
+          </li>
+          <li>
+            <span class="rl-type">paper</span>
+            <span>Scaling Laws for Neural Language Models</span>
+          </li>
+          <li>
+            <span class="rl-type">tool</span>
+            <span>Obsidian + plugin dataview per PKM</span>
+          </li>
+          <li>
+            <span class="rl-type">idea</span>
+            <span>I confini dell'emergenza nei sistemi complessi</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER / CONTATTI -->
+  <footer class="footer" id="contatti">
+    <div class="footer-top">
+      <div class="footer-left">
+        <span class="footer-logo">marco.dev</span>
+        <p>Aperto a collaborazioni selezionate,<br>conversazioni interessanti, critiche costruttive.</p>
+      </div>
+      <div class="footer-right">
+        <a href="/cdn-cgi/l/email-protection#67040e0608270a0615040849030211" class="contact-link"><span class="__cf_email__" data-cfemail="a2c1cbc3cde2cfc3d0c1cd8cc6c7d4">[email&#160;protected]</span></a>
+        <div class="social-links">
+          <a href="#">GitHub</a>
+          <a href="#">Twitter / X</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Are.na</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 — costruito a mano, nessun template</span>
+      <span class="footer-status">
+        <span class="dot"></span>
+        disponibile per nuovi progetti
+      </span>
+    </div>
   </footer>
 
-</body>
-</html>
+  <script src="main.js" defer></script>E html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>// portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <span class="nav-logo">marco.dev<span class="cursor-blink">_</span></span>
+    <ul class="nav-links">
+      <li><a href="#progetti">progetti</a></li>
+      <li><a href="#ai">ai/exp</a></li>
+      <li><a href="#mindset">mindset</a></li>
+      <li><a href="#contatti">contatti</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-meta">
+      <span class="tag">DISPONIBILE — MILANO</span>
+      <span class="tag">v2.4.1</span>
+    </div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="line-reveal">costruisco cose</span><br>
+        <span class="line-reveal delay-1">con e senza AI.</span>
+      </h1>
+      <p class="hero-sub line-reveal delay-2">
+        Sviluppatore & sperimentatore. Non uso l'AI per fare marketing —<br>
+        la uso per capire dove stia andando il pensiero umano.
+      </p>
+    </div>
+
+    <div class="hero-footer">
+      <div class="hero-stack">
+        <span>TypeScript</span>
+        <span>Python</span>
+        <span>LLM orchestration</span>
+        <span>generative systems</span>
+      </div>
+      <a href="#progetti" class="scroll-hint">
+        <svg width="16" height="24" viewBox="0 0 16 24"><path d="M8 0v20M1 13l7 8 7-8" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+      </a>
+    </div>
+
+    <!-- grid decorativa -->
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+  </section>
+
+  <!-- PROGETTI -->
+  <section class="section" id="progetti">
+    <div class="section-header">
+      <span class="section-index">01</span>
+      <h2 class="section-title">Progetti</h2>
+    </div>
+
+    <div class="projects-grid">
+      <article class="card card--featured">
+        <div class="card-top">
+          <span class="card-tag">OSS · 2024</span>
+          <span class="card-status status-live">live</span>
+        </div>
+        <h3 class="card-title">Context Mapper</h3>
+        <p class="card-desc">Tool CLI per mappare e comprimere contesti LLM. Riduce il token overhead del 40% mantenendo la coerenza semantica.</p>
+        <div class="card-tech">
+          <span>Python</span><span>tiktoken</span><span>networkx</span>
+        </div>
+        <a href="#" class="card-link">
+          <span>esplora</span>
+          <svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 12L12 2M12 2H5M12 2v7" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+        </a>
+      </article>
+
+      <article class="card">
+        <div class="card-top">
+          <span class="card-tag">Personale · 2025</span>
+          <span class="card-status status-wip">wip</span>
+        </div>
+        <h3 class="card-title">Drift Reader</h3>
+        <p class="card-desc">Feed reader che usa modelli locali per classificare e connettere articoli. Zero cloud, tutto on-device.</p>
+        <div class="card-tech">
+          <span>Electron</span><span>Ollama</span><span>SQLite</span>
+        </div>
+        <a href="#" class="card-link">
+          <span>esplora</span>
+          <svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 12L12 2M12 2H5M12 2v7" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+        </a>
+      </article>
+
+      <article class="card">
+        <div class="card-top">
+          <span class="card-tag">Client · 2024</span>
+          <span class="card-status status-live">live</span>
+        </div>
+        <h3 class="card-title">Forma Design System</h3>
+        <p class="card-desc">Sistema di componenti per startup B2B. Tokenizzazione completa, dark mode, accessibilità WCAG AA.</p>
+        <div class="card-tech">
+          <span>React</span><span>Radix UI</span><span>Figma</span>
+        </div>
+        <a href="#" class="card-link">
+          <span>esplora</span>
+          <svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 12L12 2M12 2H5M12 2v7" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <!-- AI EXPERIMENTS -->
+  <section class="section section--dark" id="ai">
+    <div class="section-header">
+      <span class="section-index">02</span>
+      <h2 class="section-title">Esperimenti AI</h2>
+    </div>
+    <p class="section-intro">
+      Non uso l'AI per generare contenuti. La uso come microscopio — per osservare strutture, pattern, limiti.
+    </p>
+
+    <div class="experiments-list">
+      <div class="experiment">
+        <div class="experiment-num">001</div>
+        <div class="experiment-body">
+          <h4>Hallucination surface mapping</h4>
+          <p>Mappatura sistematica delle zone di allucinazione in GPT-4 e Claude tramite prompt strutturati. Risultati inaspettati sulla geometria degli errori.</p>
+          <div class="experiment-meta">
+            <span>3 settimane</span>
+            <span>~12k prompt</span>
+            <span>nota metodologica disponibile</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="experiment">
+        <div class="experiment-num">002</div>
+        <div class="experiment-body">
+          <h4>Latent space poetry</h4>
+          <p>Interpolazione nello spazio latente di modelli text-to-image per generare sequenze visive coerenti. Più interessante dei risultati finali è il percorso.</p>
+          <div class="experiment-meta">
+            <span>ongoing</span>
+            <span>Stable Diffusion</span>
+            <span>UMAP vis</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="experiment">
+        <div class="experiment-num">003</div>
+        <div class="experiment-body">
+          <h4>LLM come strumento epistemico</h4>
+          <p>Uso di modelli come interlocutori per il pensiero divergente — non per avere risposte, ma per fare domande migliori.</p>
+          <div class="experiment-meta">
+            <span>riflessione in corso</span>
+            <span>scritto privato</span>
+            <span>draft pubblico a breve</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- terminal decor -->
+    <div class="terminal-decor" aria-hidden="true">
+      <div class="terminal-bar">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="terminal-body">
+        <span class="t-comment">// ultima sessione</span><br>
+        <span class="t-key">model</span><span class="t-op"> = </span><span class="t-val">"claude-3-7-sonnet"</span><br>
+        <span class="t-key">tokens</span><span class="t-op"> = </span><span class="t-val">1_847_223</span><br>
+        <span class="t-key">insight</span><span class="t-op"> = </span><span class="t-val">pending<span class="cursor-blink">_</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MINDSET -->
+  <section class="section" id="mindset">
+    <div class="section-header">
+      <span class="section-index">03</span>
+      <h2 class="section-title">Mindset</h2>
+    </div>
+
+    <div class="mindset-grid">
+      <blockquote class="principle">
+        <p>Il codice è l'ultimo strato. Prima viene il modello mentale del problema.</p>
+      </blockquote>
+
+      <blockquote class="principle">
+        <p>L'AI non è un junior developer da supervisare. È un territorio da esplorare.</p>
+      </blockquote>
+
+      <blockquote class="principle">
+        <p>La semplicità non è assenza di complessità. È complessità che ha trovato la sua forma giusta.</p>
+      </blockquote>
+
+      <div class="reading-list">
+        <h4>stack mentale attuale</h4>
+        <ul>
+          <li>
+            <span class="rl-type">libro</span>
+            <span>Gödel, Escher, Bach — Hofstadter</span>
+          </li>
+          <li>
+            <span class="rl-type">paper</span>
+            <span>Scaling Laws for Neural Language Models</span>
+          </li>
+          <li>
+            <span class="rl-type">tool</span>
+            <span>Obsidian + plugin dataview per PKM</span>
+          </li>
+          <li>
+            <span class="rl-type">idea</span>
+            <span>I confini dell'emergenza nei sistemi complessi</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER / CONTATTI -->
+  <footer class="footer" id="contatti">
+    <div class="footer-top">
+      <div class="footer-left">
+        <span class="footer-logo">marco.dev</span>
+        <p>Aperto a collaborazioni selezionate,<br>conversazioni interessanti, critiche costruttive.</p>
+      </div>
+      <div class="footer-right">
+        <a href="/cdn-cgi/l/email-protection#67040e0608270a0615040849030211" class="contact-link"><span class="__cf_email__" data-cfemail="a2c1cbc3cde2cfc3d0c1cd8cc6c7d4">[email&#160;protected]</span></a>
+        <div class="social-links">
+          <a href="#">GitHub</a>
+          <a href="#">Twitter / X</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Are.na</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 — costruito a mano, nessun template</span>
+      <span class="footer-status">
+        <span class="dot"></span>
+        disponibile per nuovi progetti
+      </span>
+    </div>
+  </footer>
