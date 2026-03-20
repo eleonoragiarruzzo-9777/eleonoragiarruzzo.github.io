@@ -60,6 +60,72 @@
           <p>Costruire un'applicazione web per la creazione di preventivi, utilizzabile sia online che offline. Il problema di partenza era pratico: serve uno strumento flessibile, non un foglio Excel rigido. La soluzione è una <strong>Static Web App</strong> — leggera, deployabile ovunque, e soprattutto aperta a integrazioni future.</p>
         </section>
 
+        <!-- MEDIA -->
+  <section class="project-media">
+    <div class="media-grid">
+ 
+      <!-- PRINCIPALE (screenshot o gif) -->
+      <div class="media-item media-item--main" onclick="openLightbox(this)">
+        <!-- Quando hai il file: sostituisci il div.media-placeholder con:-->
+             <img src="assets/dashboard_aziendale/main.png" alt="Descrizione schermata principale"> 
+        <!-- <div class="media-placeholder">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <rect x="2" y="6" width="28" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="11" cy="13" r="3" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M2 22l7-5 5 4 5-6 11 8" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+          <span>schermata principale<br>— aggiungi screenshot —</span>
+        </div> -->
+        <span class="media-badge">IMG</span>
+      </div>
+ 
+      <!-- SECONDARIA (gif demo) -->
+      <div class="media-item media-item--sm" onclick="openLightbox(this)">
+        <!-- Quando hai il file: sostituisci con:-->
+             <img src="assets/dashboard_aziendale/modal.png" alt="modale di prodotto"> 
+        <!-- <div class="media-placeholder">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <circle cx="14" cy="14" r="11" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M11 10l8 4-8 4V10z" fill="currentColor" opacity="0.4"/>
+          </svg>
+          <span>demo animata<br>— aggiungi gif —</span>
+        </div> -->
+        <span class="media-badge media-badge--gif">GIF</span>
+      </div>
+ 
+      <!-- TERZA (dettaglio) -->
+      <div class="media-item media-item--sm" onclick="openLightbox(this)">
+        <!-- Quando hai il file: sostituisci con:-->
+             <img src="assets/dashboard_aziendale/detail.png" alt="Dettaglio UI"> 
+        <!-- <div class="media-placeholder">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <rect x="3" y="3" width="22" height="22" rx="2" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M8 10h12M8 14h8M8 18h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <span>dettaglio / flusso<br>— aggiungi immagine —</span>
+        </div> -->
+        <span class="media-badge">IMG</span>
+      </div>
+ 
+    </div>
+    <p class="media-caption">// clicca su un'immagine per ingrandirla</p>
+  </section>
+ 
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close" onclick="closeLightbox()">[ chiudi ]</span>
+    <img id="lightbox-img" src="" alt="" >
+  </div>
+
+  <div class="link-to-figma">
+    <a href="https://www.figma.com/design/dBXpMgBnuaMhponcAqg6dy/Preventivi_app?node-id=0-1&p=f&t=I2V3et2qa6KkITpJ-0" >
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0ZM14.1421 5.85786C14.5126 5.48739 15.0874 5.48739 15.4579 5.85786L16.1421 6.54214C16.5126 6.91261 16.5126 7.48739 16.1421 7.85786L14.1421 9.85786C13.7716 10.2283 13.1968 10.2283 12.8263 9.85786L12.1421 9.17359C11.7716 8.80312 11.7716 8.22834 12.1421 7.85786L14.1421 5.85786Z" fill="currentColor"/>
+      </svg>
+      <span>apri in Figma</span>
+    </a>
+  </div>
+
         <section class="project-section">
           <h2><span class="section-num">02</span>Processo di creazione</h2>
           <p>Il punto di partenza è stato una domanda precisa: Excel o applicazione? La risposta non era scontata. Excel è immediato, familiare, zero sviluppo. Ma ha un limite strutturale: non scala, non si integra, non evolve.</p>
@@ -113,5 +179,24 @@
   </main>
 
   <script src="main.js" defer></script>
+
+  <script>
+    function openLightbox(el) {
+      const img = el.querySelector('img, video');
+      if (!img) return;
+      const lb = document.getElementById('lightbox');
+      const lbImg = document.getElementById('lightbox-img');
+      lbImg.src = img.src;
+      lbImg.alt = img.alt;
+      lbImg.style.display = 'block';
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+  </script>
 </body>
 </html>

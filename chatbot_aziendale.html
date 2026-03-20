@@ -60,6 +60,59 @@
           <p>Creare un chatbot per l'assistenza clienti capace di rispondere in modo coerente con il contesto della conversazione. L'interazione è guidata da scelte strutturate — l'utente non digita testo libero, ma seleziona tra opzioni proposte dal bot, rendendo il flusso prevedibile, chiaro e controllabile.</p>
         </section>
 
+        <!-- MEDIA -->
+  <section class="project-media">
+    <div class="media-grid">
+ 
+      <!-- PRINCIPALE (screenshot o gif) -->
+      <div class="media-item media-item--main" onclick="openLightbox(this)">
+        <!-- Quando hai il file: sostituisci il div.media-placeholder con: -->
+             <img src="assets/chatbot_aziendale/main.png" alt="Descrizione schermata principale">
+        <span class="media-badge">IMG</span>
+      </div> 
+
+      <!-- SECONDARIA (gif demo) -->
+      <div class="media-item media-item--sm" onclick="openLightbox(this)">
+        <!-- Quando hai il file: sostituisci con:-->
+             <img src="assets/chatbot_aziendale/demo.gif" alt="Demo animata"> 
+        <span class="media-badge media-badge--gif">GIF</span>
+      </div>
+ 
+      <!-- TERZA (dettaglio) -->
+      <div class="media-item media-item--sm" onclick="openLightbox(this)">
+        <!-- Quando hai il file: sostituisci con:-->
+             <img src="assets/chatbot_aziendale/detail.png" alt="Dettaglio UI"> 
+        <span class="media-badge">IMG</span>
+      </div>
+ 
+    </div>
+    <p class="media-caption">// clicca su un'immagine per ingrandirla</p>
+  </section>
+ 
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close" onclick="closeLightbox()">[ chiudi ]</span>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <div class="link-to-browser">
+    <a href="https://cdn.botpress.cloud/webchat/v3.3/shareable.html?configUrl=https://files.bpcontent.cloud/2024/10/11/11/20241011113142-VZXCSKQA.json" >
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0ZM14.1421 5.85786C14.5126 5.48739 15.0874 5.48739 15.4579 5.85786L16.1421 6.54214C16.5126 6.91261 16.5126 7.48739 16.1421 7.85786L14.1421 9.85786C13.7716 10.2283 13.1968 10.2283 12.8263 9.85786L12.1421 9.17359C11.7716 8.80312 11.7716 8.22834 12.1421 7.85786L14.1421 5.85786Z" fill="currentColor"/>
+      </svg>
+      <span>apri in browser</span>
+    </a>
+  </div>
+
+  <div class="link-to-telegram">
+    <a href="https://t.me/systemliftsupport_bot" >
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0ZM14.1421 5.85786C14.5126 5.48739 15.0874 5.48739 15.4579 5.85786L16.1421 6.54214C16.5126 6.91261 16.5126 7.48739 16.1421 7.85786L14.1421 9.85786C13.7716 10.2283 13.1968 10.2283 12.8263 9.85786L12.1421 9.17359C11.7716 8.80312 11.7716 8.22834 12.1421 7.85786L14.1421 5.85786Z" fill="currentColor"/>
+      </svg>
+      <span>apri in telegram</span>
+    </a>
+  </div>
+
         <section class="project-section">
           <h2><span class="section-num">02</span>Processo di creazione</h2>
           <p>Il punto di partenza è stato trovare uno strumento che permettesse di costruire il chatbot in modo rapido, senza richiedere infrastruttura custom. La scelta è ricaduta su <strong>Botpress</strong> dopo una fase di ricerca comparativa.</p>
@@ -106,5 +159,25 @@
   </main>
 
   <script src="main.js" defer></script>
+
+  <script>
+    function openLightbox(el) {
+      const img = el.querySelector('img, video');
+      if (!img) return;
+      const lb = document.getElementById('lightbox');
+      const lbImg = document.getElementById('lightbox-img');
+      lbImg.src = img.src;
+      lbImg.alt = img.alt;
+      lbImg.style.display = 'block';
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+  </script>
+
 </body>
 </html>

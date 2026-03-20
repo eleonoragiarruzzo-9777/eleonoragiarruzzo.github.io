@@ -60,6 +60,41 @@
           <p>Sviluppare un gioco 2D funzionante come progetto di tesi, esplorando un ambiente di sviluppo nuovo partendo da zero. L'obiettivo non era solo costruire il gioco, ma capire il processo — come si sceglie uno strumento, come lo si impara, come si integrano risorse esterne (tutorial, AI) in un flusso di lavoro reale.</p>
         </section>
 
+        <!-- MEDIA -->
+  <section class="project-media">
+    <div class="media-grid">
+ 
+      <!-- PRINCIPALE (screenshot o gif) -->
+      <div class="media-item media-item--main" onclick="openLightbox(this)">
+        <!-- Quando hai il file: sostituisci il div.media-placeholder con:-->
+             <img src="assets/gioco_interattivo/main.png" alt="Descrizione schermata principale"> 
+        <span class="media-badge">IMG</span>
+      </div>
+ 
+      <!-- SECONDARIA (gif demo) -->
+      <div class="media-item media-item--sm" onclick="openLightbox(this)">
+        <!-- Quando hai il file: sostituisci con:-->
+             <img src="assets/gioco_interattivo/demo.gif" alt="Demo animata"> 
+        <span class="media-badge media-badge--gif">GIF</span>
+      </div>
+ 
+      <!-- TERZA (dettaglio) -->
+      <div class="media-item media-item--sm" onclick="openLightbox(this)">
+        <!-- Quando hai il file: sostituisci con:-->
+             <img src="assets/gioco_interattivo/detail.png" alt="Dettaglio UI"> 
+        <span class="media-badge">IMG</span>
+      </div>
+ 
+    </div>
+    <p class="media-caption">// clicca su un'immagine per ingrandirla</p>
+  </section>
+ 
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close" onclick="closeLightbox()">[ chiudi ]</span>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
         <section class="project-section">
           <h2><span class="section-num">02</span>Processo di creazione</h2>
           <p>Come per gli altri progetti, il primo passo è stato la ricerca dello strumento giusto. Il criterio: velocità di apprendimento, documentazione accessibile, comunità attiva. <strong>Godot</strong> ha soddisfatto tutti e tre.</p>
@@ -113,5 +148,24 @@
   </main>
 
   <script src="main.js" defer></script>
+
+  <script>
+    function openLightbox(el) {
+      const img = el.querySelector('img, video');
+      if (!img) return;
+      const lb = document.getElementById('lightbox');
+      const lbImg = document.getElementById('lightbox-img');
+      lbImg.src = img.src;
+      lbImg.alt = img.alt;
+      lbImg.style.display = 'block';
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+  </script>
 </body>
 </html>
