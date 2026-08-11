@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BloomOS — eleonora.dev</title>
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="project.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@400;450;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo" aria-label="Home">
+      <div class="logo-icon" aria-hidden="true">E</div>
+      Eleonora
+    </a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html#progetti">← Progetti</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambia tema">
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+        </svg>
+        <svg class="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <main class="project-main">
+
+    <div class="project-hero">
+      <div class="project-meta-top">
+        <span class="tag">Progetto 04</span>
+        <span class="tag">App · In corso</span>
+        <span class="tag tag-wip">WIP</span>
+      </div>
+      <h1 class="project-title">BloomOS</h1>
+      <p class="project-tagline">Un ecosistema per pianificare la propria vita e tenere traccia del proprio giardino interiore. Non un'app — un mondo che cresce insieme a te.</p>
+    </div>
+
+    <section class="project-media">
+      <div class="media-grid">
+        <div class="media-item media-item--main" onclick="openLightbox(this)">
+          <div class="media-placeholder">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.2">
+              <circle cx="18" cy="18" r="7"/>
+              <path d="M18 4v4M18 28v4M4 18h4M28 18h4M7.5 7.5l2.8 2.8M25.7 25.7l2.8 2.8M7.5 28.5l2.8-2.8M25.7 10.3l2.8-2.8"/>
+            </svg>
+            <span>Dashboard principale<br>— aggiungi screenshot —</span>
+          </div>
+          <span class="media-badge">IMG</span>
+        </div>
+        <div class="media-item media-item--sm" onclick="openLightbox(this)">
+          <div class="media-placeholder">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.2">
+              <circle cx="14" cy="14" r="10"/><path d="M10 14l3 3 5-5"/>
+            </svg>
+            <span>Living Garden<br>— aggiungi gif —</span>
+          </div>
+          <span class="media-badge media-badge--gif">GIF</span>
+        </div>
+        <div class="media-item media-item--sm" onclick="openLightbox(this)">
+          <div class="media-placeholder">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="4" y="4" width="20" height="20" rx="3"/>
+              <path d="M9 10h10M9 14h7M9 18h8"/>
+            </svg>
+            <span>Architettura layer<br>— aggiungi immagine —</span>
+          </div>
+          <span class="media-badge">IMG</span>
+        </div>
+      </div>
+      <p class="media-caption">// clicca su un'immagine per ingrandirla</p>
+    </section>
+
+    <div class="project-grid">
+      <aside class="project-sidebar">
+        <div class="sidebar-block">
+          <span class="sidebar-label">Stato</span>
+          <span class="sidebar-value">In corso — fase di design</span>
+        </div>
+        <div class="sidebar-block">
+          <span class="sidebar-label">Tecnologie</span>
+          <div class="sidebar-tags">
+            <span>Figma</span><span>Design system</span><span>UX research</span>
+          </div>
+        </div>
+        <div class="sidebar-block">
+          <span class="sidebar-label">Tipologia</span>
+          <span class="sidebar-value">App personale</span>
+        </div>
+      </aside>
+
+      <div class="project-content">
+
+        <section class="project-section">
+          <h2><span class="section-num">01</span>Obiettivo</h2>
+          <p>BloomOS non è un'app di produttività. È un ecosistema pensato per aiutare a pianificare la propria vita e tenere traccia del proprio <em>giardino interiore</em> — abitudini, obiettivi, emozioni, crescita personale.</p>
+          <p>La filosofia centrale: <strong>l'utente non naviga tra schermate. Attraversa un mondo che cresce insieme a lui.</strong> Ogni elemento dell'interfaccia ha uno scopo funzionale e uno scopo emotivo.</p>
+        </section>
+
+        <section class="project-section">
+          <h2><span class="section-num">02</span>Architettura</h2>
+          <p>BloomOS è costruita su due layer distinti ma intrecciati:</p>
+          <div class="insight-block">
+            <span class="insight-label">// Layer 1 — Functional Architecture</span>
+            <p>Tutto ciò che permette all'app di funzionare: Dashboard, Habit Tracker, Projects, Reading, Workout, Meal Planner, Finance, Analytics, Settings.</p>
+          </div>
+          <div class="insight-block" style="margin-top: 12px;">
+            <span class="insight-label">// Layer 2 — Emotional Architecture</span>
+            <p>Tutto ciò che rende BloomOS un'esperienza: Living Garden, Bloom Spirit, Personal Bloom, Seasons, Growth Insights, Archetypes, World Building. Questi elementi trasformano dati e abitudini in una storia personale.</p>
+          </div>
+        </section>
+
+        <section class="project-section">
+          <h2><span class="section-num">03</span>Processo di creazione</h2>
+          <p>Il progetto nasce dall'osservazione di un problema: le app di produttività esistenti trattano la vita come una lista di task. BloomOS parte dalla domanda opposta — <strong>come si rappresenta la crescita di una persona?</strong></p>
+          <p>La fase attuale è di design system e architettura dell'informazione. Prima di scrivere una riga di codice, ogni flusso, ogni metafora visiva, ogni transizione deve avere una ragione precisa.</p>
+        </section>
+
+        <section class="project-section">
+          <h2><span class="section-num">04</span>Prossimi step</h2>
+          <ul class="next-steps">
+            <li>
+              <span class="step-icon">→</span>
+              <div>
+                <strong>Design system completo</strong>
+                <p>Definire token, componenti, pattern di interazione e microanimazioni coerenti tra i due layer.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-icon">→</span>
+              <div>
+                <strong>Prototipo interattivo</strong>
+                <p>Costruire in Figma un prototipo navigabile del Living Garden e del Habit Tracker.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-icon">→</span>
+              <div>
+                <strong>Sviluppo MVP</strong>
+                <p>Portare il design in codice — iniziando dal layer funzionale, poi integrare progressivamente quello emotivo.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="project-nav-bottom">
+      <a href="dashboard_preventivi.html" class="btn-back">← progetto precedente</a>
+      <a href="project_game_bloomos.html" class="btn-next">prossimo progetto →</a>
+    </div>
+
+  </main>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close" onclick="closeLightbox()">[ chiudi ]</span>
+    <img id="lightbox-img" src="" alt="" style="display:none">
+  </div>
+
+  <script src="main.js" defer></script>
+  <script>
+    function openLightbox(el) {
+      const img = el.querySelector('img, video');
+      if (!img) return;
+      const lb = document.getElementById('lightbox');
+      const lbImg = document.getElementById('lightbox-img');
+      lbImg.src = img.src; lbImg.alt = img.alt; lbImg.style.display = 'block';
+      lb.classList.add('open'); document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+  </script>
+</body>
+</html>

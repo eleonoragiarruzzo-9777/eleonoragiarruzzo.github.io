@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuovo Gioco — eleonora.dev</title>
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="project.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@400;450;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo" aria-label="Home">
+      <div class="logo-icon" aria-hidden="true">E</div>
+      Eleonora
+    </a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html#progetti">← Progetti</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambia tema">
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+        </svg>
+        <svg class="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <main class="project-main">
+
+    <div class="project-hero">
+      <div class="project-meta-top">
+        <span class="tag">Progetto 05</span>
+        <span class="tag">Game · In corso</span>
+        <span class="tag tag-wip">WIP</span>
+      </div>
+      <h1 class="project-title">Nuovo Gioco</h1>
+      <p class="project-tagline">Evoluzione del gioco di tesi, con una filosofia narrativa ispirata a BloomOS. La meccanica è la crescita — il mondo cambia mentre il personaggio evolve.</p>
+    </div>
+
+    <section class="project-media">
+      <div class="media-grid">
+        <div class="media-item media-item--main" onclick="openLightbox(this)">
+          <div class="media-placeholder">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M18 4l5 10h11l-9 7 3 11-10-7-10 7 3-11-9-7h11z"/>
+            </svg>
+            <span>Schermata di gioco<br>— aggiungi screenshot —</span>
+          </div>
+          <span class="media-badge">IMG</span>
+        </div>
+        <div class="media-item media-item--sm" onclick="openLightbox(this)">
+          <div class="media-placeholder">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.2">
+              <circle cx="14" cy="14" r="10"/>
+              <path d="M10 14l7-5v10z" fill="currentColor" opacity="0.3"/>
+            </svg>
+            <span>Gameplay loop<br>— aggiungi gif —</span>
+          </div>
+          <span class="media-badge media-badge--gif">GIF</span>
+        </div>
+        <div class="media-item media-item--sm" onclick="openLightbox(this)">
+          <div class="media-placeholder">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M14 4c0 0-8 6-8 12a8 8 0 0016 0c0-6-8-12-8-12z"/>
+            </svg>
+            <span>Mappa / mondo<br>— aggiungi immagine —</span>
+          </div>
+          <span class="media-badge">IMG</span>
+        </div>
+      </div>
+      <p class="media-caption">// clicca su un'immagine per ingrandirla</p>
+    </section>
+
+    <div class="project-grid">
+      <aside class="project-sidebar">
+        <div class="sidebar-block">
+          <span class="sidebar-label">Stato</span>
+          <span class="sidebar-value">In corso — fase concept</span>
+        </div>
+        <div class="sidebar-block">
+          <span class="sidebar-label">Tecnologie</span>
+          <div class="sidebar-tags">
+            <span>Godot</span><span>GDScript</span><span>Narrative design</span><span>AI</span>
+          </div>
+        </div>
+        <div class="sidebar-block">
+          <span class="sidebar-label">Ispirazione</span>
+          <span class="sidebar-value">Gioco di tesi + BloomOS</span>
+        </div>
+      </aside>
+
+      <div class="project-content">
+
+        <section class="project-section">
+          <h2><span class="section-num">01</span>Obiettivo</h2>
+          <p>Questo progetto nasce dall'incrocio di due esperienze precedenti: le meccaniche costruite nel gioco di tesi e la filosofia di BloomOS. L'idea è semplice: <strong>fare del gioco un luogo dove la crescita del personaggio rispecchia una crescita reale.</strong></p>
+          <p>Non un gioco di livelli da completare, ma un mondo che si espande insieme al giocatore — attraverso archetipi, stagioni, scelte narrative che cambiano il territorio.</p>
+        </section>
+
+        <section class="project-section">
+          <h2><span class="section-num">02</span>Filosofia di design</h2>
+          <div class="insight-block">
+            <span class="insight-label">// da BloomOS al gioco</span>
+            <p>BloomOS trasforma dati e abitudini in una storia personale. Questo gioco fa lo stesso — ma in forma interattiva e narrativa. Gli archetipi di BloomOS diventano classi o percorsi del personaggio. Le stagioni diventano cicli di gioco. Il giardino interiore diventa il mondo.</p>
+          </div>
+          <p>La connessione tra i due progetti non è superficiale: è strutturale. Entrambi parlano di crescita come processo non lineare, con ricadute, scoperte, momenti di fioritura.</p>
+        </section>
+
+        <section class="project-section">
+          <h2><span class="section-num">03</span>Processo di creazione</h2>
+          <p>Il punto di partenza è il gioco di tesi: meccaniche funzionanti, ambiente Godot già conosciuto, GDScript familiare. Da lì, il salto qualitativo è narrativo prima che tecnico.</p>
+          <p>La fase attuale è di <strong>concept e narrative design</strong> — definire la storia, gli archetipi, la struttura del mondo prima di costruire nuovi livelli.</p>
+        </section>
+
+        <section class="project-section">
+          <h2><span class="section-num">04</span>Prossimi step</h2>
+          <ul class="next-steps">
+            <li>
+              <span class="step-icon">→</span>
+              <div>
+                <strong>Narrative design completo</strong>
+                <p>Definire storia, archetipi, struttura del mondo e come le scelte del giocatore cambiano il territorio.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-icon">→</span>
+              <div>
+                <strong>Nuovi livelli e nemici</strong>
+                <p>Costruire su Godot i nuovi ambienti, con nemici che rispecchiano diversi tipi di ostacolo narrativo.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-icon">→</span>
+              <div>
+                <strong>Introduzione e storia</strong>
+                <p>Aggiungere la sequenza iniziale che contestualizza il mondo e introduce il personaggio.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-icon">→</span>
+              <div>
+                <strong>Integrazione AI</strong>
+                <p>Usare AI per generare dialoghi adattativi o comportamenti dei personaggi secondari basati sulle scelte del giocatore.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="project-nav-bottom">
+      <a href="project_bloomos.html" class="btn-back">← progetto precedente</a>
+      <a href="index.html#progetti" class="btn-next">tutti i progetti →</a>
+    </div>
+
+  </main>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close" onclick="closeLightbox()">[ chiudi ]</span>
+    <img id="lightbox-img" src="" alt="" style="display:none">
+  </div>
+
+  <script src="main.js" defer></script>
+  <script>
+    function openLightbox(el) {
+      const img = el.querySelector('img, video');
+      if (!img) return;
+      const lb = document.getElementById('lightbox');
+      const lbImg = document.getElementById('lightbox-img');
+      lbImg.src = img.src; lbImg.alt = img.alt; lbImg.style.display = 'block';
+      lb.classList.add('open'); document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+  </script>
+</body>
+</html>
