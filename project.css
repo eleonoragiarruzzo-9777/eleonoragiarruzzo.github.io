@@ -121,6 +121,7 @@
   background: rgba(250,247,244,0.9);
   border: 1px solid var(--border);
   color: var(--text-muted);
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
 }
 .media-badge--gif { color: var(--coral); border-color: rgba(229,107,111,0.3); }
